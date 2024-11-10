@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --accent: 0 0% 92%;
+  --radius: 0.4rem;
+  --input: 0 0% 89.8%;
+  --foreground: 0 0% 3.9%;
+  --muted-foreground: 0 0% 45.1%;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  border: 0 solid #e5e7eb;
+}
+body {
+  font-family: monospace;
+  color: hsl(var(--foreground));
+}
+
+.text-muted-foreground {
+  color: hsl(var(--muted-foreground));
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}

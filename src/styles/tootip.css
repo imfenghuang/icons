@@ -1,0 +1,5 @@
+.v-popper--theme-tooltip .v-popper__inner {
+  color: #fff;
+  border-radius: calc(var(--radius) - 2px);
+  padding: 0.5rem;
+}
