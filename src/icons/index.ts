@@ -44,6 +44,10 @@ import CircleChevronUpIconRaw from './CircleChevronUpIcon.vue?raw';
 import CircleChevronDownIconRaw from './CircleChevronDownIcon.vue?raw';
 import CircleChevronLeftIconRaw from './CircleChevronLeftIcon.vue?raw';
 import CircleChevronRightIconRaw from './CircleChevronRightIcon.vue?raw';
+import ChevronsUpDownIconRaw from './ChevronsUpDownIcon.vue?raw';
+import ChevronsDownUpIconRaw from './ChevronsDownUpIcon.vue?raw';
+import ChevronsLeftRightIconRaw from './ChevronsLeftRightIcon.vue?raw';
+import ChevronsRightLeftIconRaw from './ChevronsRightLeftIcon.vue?raw';
 // 512 512
 import SyringeIconRaw from './SyringeIcon.vue?raw';
 import FlaskIconRaw from './FlaskIcon.vue?raw';
@@ -270,6 +274,31 @@ export const ICON_LIST = [
     raw: CircleChevronRightIconRaw,
     keywords: ['next', 'forward', 'more than', 'greater', 'menu', '>', 'chevron'],
   },
+  {
+    name: 'ChevronsUpDownIcon',
+    icon: ChevronsUpDownIcon,
+    raw: ChevronsUpDownIconRaw,
+    keywords: ['expand', 'unfold', 'vertical', 'chevron'],
+  },
+  {
+    name: 'ChevronsDownUpIcon',
+    icon: ChevronsDownUpIcon,
+    raw: ChevronsDownUpIconRaw,
+    keywords: ['collapse', 'fold', 'vertical', 'chevron'],
+  },
+  {
+    name: 'ChevronsLeftRightIcon',
+    icon: ChevronsLeftRightIcon,
+    raw: ChevronsLeftRightIconRaw,
+    keywords: ['expand', 'unfold', 'horizontal', 'chevron'],
+  },
+  {
+    name: 'ChevronsRightLeftIcon',
+    icon: ChevronsRightLeftIcon,
+    raw: ChevronsRightLeftIconRaw,
+    keywords: ['collapse', 'fold', 'horizontal', 'chevron'],
+  },
+
   // 512 512
   {
     name: 'SyringeIcon',
