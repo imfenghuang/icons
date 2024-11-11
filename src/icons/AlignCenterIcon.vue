@@ -24,7 +24,7 @@
 
 <script>
 export default {
-  name: 'AlignHorizontalIcon',
+  name: 'AlignCenterIcon',
 };
 </script>
 <script setup>
