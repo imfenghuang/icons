@@ -18,7 +18,7 @@
     >
       <div
         v-for="Comp in CompsFilter"
-        :key="Comp.name || Comp.__name"
+        :key="Comp.name"
         class="p-3 border w-full h-full border-input rounded-md flex items-center justify-center flex-col"
       >
         <component :is="Comp" />
@@ -33,66 +33,23 @@
   </div>
 </template>
 <script setup lang="ts">
-const Comps = [
-  SearchIcon,
-  CartIcon,
-  LayersIcon,
-  GripIcon,
-  FrameIcon,
-  SunIcon,
-  DeleteIcon,
-  FileStackIcon,
-  SettingGearIcon,
-  CalendarCogIcon,
-  MenuIcon,
-  CopyIcon,
-  AudioLinesIcon,
-  ArchiveIcon,
-  LogoutIcon,
-  CircleHelpIcon,
-  SquareStackIcon,
-  MessageCircleIcon,
-  MessageCircleMoreIcon,
-  ArrowLeftIcon,
-  ArrowRightIcon,
-  RefreshIcon,
-  DownloadIcon,
-  SquarePenIcon,
-  CursorClickIcon,
-  ClockIcon,
-  // AlarmClockIcon, // TODO
-  CompassIcon,
-  TimerIcon,
-  ExpandIcon,
-  GaugeIcon,
-  BoneIcon,
-  AlignCenterIcon,
-  AlignHorizontalIcon,
-  AlignVerticalIcon,
-  BellIcon,
-  BadgeAlertIcon,
-  BadgePercentIcon,
-  ChartPieIcon,
-  UpvoteIcon,
-  DownvoteIcon,
-  UsersIcon,
-  HandCoinsIcon,
-  // 512 512
-  SyringeIcon,
-  FlaskIcon,
-];
+const Comps = ICON_LIST;
 
 const inputRef = ref();
 const filterName = ref('');
-const CompsFilter = shallowRef(Comps);
+const CompsFilter = shallowRef<Component[]>(Comps.map(v => v.icon));
 const isApple = ref(/iPhone|iPad|iPod|Mac\sOS/.test(navigator.userAgent) ? true : false);
 
 const updateComps = (value: string) => {
   filterName.value = value.trim();
   CompsFilter.value =
     filterName.value === ''
-      ? Comps
-      : Comps.filter(v => v?.__name?.toLowerCase?.()?.includes?.(filterName.value.toLowerCase()));
+      ? Comps.map(v => v.icon)
+      : Comps.filter(v => {
+          if (v.name.toLowerCase().includes(filterName.value.toLowerCase())) return true;
+          if (v.keywords.includes(filterName.value.toLowerCase())) return true;
+          return false;
+        }).map(v => v.icon);
 };
 
 function filterComps(event: Event) {
