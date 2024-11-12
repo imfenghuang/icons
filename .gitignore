@@ -25,6 +25,7 @@ dist-ssr
 
 # todo
 *build.config.ts
+src/components/*Icon.vue
 src/components/*copy*.vue
 src/components/*HelloWorld*.vue
 src/components/AlarmClockIcon.vue
@@ -34,4 +35,5 @@ src/auto-imports.d.ts
 src/components.d.ts
 src/directives
 src/types
+tool.ts
 .eslintcache

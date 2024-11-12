@@ -2,11 +2,13 @@ import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import AutoImport from 'unplugin-auto-import/vite';
 import Components from 'unplugin-vue-components/vite';
+import vueDevTools from 'vite-plugin-vue-devtools';
 
 export default defineConfig(({ mode }) => {
   let config = {
     plugins: [
       vue(),
+      vueDevTools(),
       Components({
         dirs: ['src/components'],
         include: [/\.vue$/, /\.vue\?vue/],

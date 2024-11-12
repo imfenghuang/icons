@@ -3,6 +3,8 @@
     className="cursor-pointer select-none p-2 hover:bg-accent rounded-md transition-colors duration-200 flex items-center justify-center"
     @mouseenter="mouseEnterHandler"
     @mouseleave="mouseLeaveHandler"
+    role="button"
+    tabindex="0"
   >
     <svg
       xmlns="http://www.w3.org/2000/svg"

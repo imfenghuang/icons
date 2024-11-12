@@ -3,6 +3,8 @@
     className="cursor-pointer select-none p-2 hover:bg-accent rounded-md transition-colors duration-200 flex items-center justify-center overflow-hidden"
     @mouseenter="mouseEnterHandler"
     @mouseleave="mouseLeaveHandler"
+    role="button"
+    tabindex="0"
   >
     <Motion
       ref="target"
@@ -50,10 +52,12 @@ const motionInstance = useMotion(target, {
   enter: variants.normal,
 });
 
-async function mouseEnterHandler() {
+async function mouseEnterHandler(e) {
+  console.log('1', e.type, e);
   await motionInstance.apply(variants.animate);
 }
-async function mouseLeaveHandler() {
+async function mouseLeaveHandler(e) {
+  console.log('2', e.type, e);
   await motionInstance.apply(variants.normal);
 }
 </script>

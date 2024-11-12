@@ -1,10 +1,10 @@
 <template>
-  <div class="flex justify-center items-center gap-2 mt-2">
+  <div class="flex justify-center items-center gap-2 mt-2" role="button" tabindex="0">
     <div :class="className" v-tooltip.bottom="'copy'" @click="copyHandler">
       <Copy :stroke-width="2" :size="14" v-if="!copied" />
       <Check :stroke-width="1" :size="14" v-else />
     </div>
-    <div :class="className" v-tooltip.bottom="'download .vue file'" @click="downloadHandler">
+    <div :class="className" v-tooltip.bottom="'download .vue file'" @click="downloadHandler" role="button" tabindex="0">
       <Download :stroke-width="2" :size="14" />
     </div>
     <a :href="sourceLink" target="_blank" :class="className" v-tooltip.bottom="'view on Github'">
