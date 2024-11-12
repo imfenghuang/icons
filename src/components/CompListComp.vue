@@ -19,7 +19,7 @@
       <div
         v-for="Comp in CompsFilter"
         :key="Comp.name"
-        class="p-3 border w-full border-input rounded-md flex items-center justify-center flex-col"
+        class="p-3 border border-input rounded-md flex items-center justify-center flex-col"
       >
         <component :is="Comp" />
         <p class="text-xs mt-2">{{ Comp.name }}</p>
