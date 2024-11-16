@@ -50,6 +50,7 @@ import ChevronsLeftRightIconRaw from './ChevronsLeftRightIcon.vue?raw';
 import ChevronsRightLeftIconRaw from './ChevronsRightLeftIcon.vue?raw';
 import CogIconRaw from './CogIcon.vue?raw';
 import RabbitIconRaw from './RabbitIcon.vue?raw';
+import AlarmClockIconRaw from './AlarmClockIcon.vue?raw';
 // 512 512
 import SyringeIconRaw from './SyringeIcon.vue?raw';
 import FlaskIconRaw from './FlaskIcon.vue?raw';
@@ -311,6 +312,12 @@ export const ICON_LIST = [
     icon: RabbitIcon,
     raw: RabbitIconRaw,
     keywords: [],
+  },
+  {
+    name: 'AlarmClockIcon',
+    icon: AlarmClockIcon,
+    raw: AlarmClockIconRaw,
+    keywords: ['morning'],
   },
 
   // 512 512
