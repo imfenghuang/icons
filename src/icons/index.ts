@@ -48,6 +48,8 @@ import ChevronsUpDownIconRaw from './ChevronsUpDownIcon.vue?raw';
 import ChevronsDownUpIconRaw from './ChevronsDownUpIcon.vue?raw';
 import ChevronsLeftRightIconRaw from './ChevronsLeftRightIcon.vue?raw';
 import ChevronsRightLeftIconRaw from './ChevronsRightLeftIcon.vue?raw';
+import CogIconRaw from './CogIcon.vue?raw';
+import RabbitIconRaw from './RabbitIcon.vue?raw';
 // 512 512
 import SyringeIconRaw from './SyringeIcon.vue?raw';
 import FlaskIconRaw from './FlaskIcon.vue?raw';
@@ -297,6 +299,18 @@ export const ICON_LIST = [
     icon: ChevronsRightLeftIcon,
     raw: ChevronsRightLeftIconRaw,
     keywords: ['collapse', 'fold', 'horizontal', 'chevron'],
+  },
+  {
+    name: 'CogIcon',
+    icon: CogIcon,
+    raw: CogIconRaw,
+    keywords: [],
+  },
+  {
+    name: 'RabbitIcon',
+    icon: RabbitIcon,
+    raw: RabbitIconRaw,
+    keywords: [],
   },
 
   // 512 512
