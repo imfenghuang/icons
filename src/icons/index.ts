@@ -51,6 +51,7 @@ import ChevronsRightLeftIconRaw from './ChevronsRightLeftIcon.vue?raw';
 import CogIconRaw from './CogIcon.vue?raw';
 import RabbitIconRaw from './RabbitIcon.vue?raw';
 import AlarmClockIconRaw from './AlarmClockIcon.vue?raw';
+import LoaderPinwheelIconRaw from './LoaderPinwheelIcon.vue?raw';
 // 512 512
 import SyringeIconRaw from './SyringeIcon.vue?raw';
 import FlaskIconRaw from './FlaskIcon.vue?raw';
@@ -318,6 +319,23 @@ export const ICON_LIST = [
     icon: AlarmClockIcon,
     raw: AlarmClockIconRaw,
     keywords: ['morning'],
+  },
+  {
+    name: 'LoaderPinwheelIcon',
+    icon: LoaderPinwheelIcon,
+    raw: LoaderPinwheelIconRaw,
+    keywords: [
+      'loading',
+      'wait',
+      'busy',
+      'progress',
+      'throbber',
+      'spinner',
+      'spinning',
+      'beach ball',
+      'frozen',
+      'freeze',
+    ],
   },
 
   // 512 512
