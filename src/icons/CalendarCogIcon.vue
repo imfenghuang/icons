@@ -70,9 +70,11 @@ const hoverFn = type => {
     ...defaultTransition,
   });
 };
+
 function mouseEnterHandler() {
   hoverFn('animate');
 }
+
 function mouseLeaveHandler() {
   hoverFn('normal');
 }

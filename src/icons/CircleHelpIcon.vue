@@ -60,9 +60,11 @@ const hoverFn = type => {
     ...variant,
   });
 };
+
 function mouseEnterHandler() {
   hoverFn('animate');
 }
+
 function mouseLeaveHandler() {
   hoverFn('normal');
 }

@@ -104,11 +104,11 @@ const hoverFn = async (isHover = true) => {
   }
 };
 
-async function mouseEnterHandler() {
+function mouseEnterHandler() {
   hoverFn(true);
 }
 
-async function mouseLeaveHandler() {
+function mouseLeaveHandler() {
   hoverFn(false);
 }
 </script>

@@ -70,9 +70,11 @@ const hoverFn = type => {
     });
   }
 };
+
 function mouseEnterHandler() {
   hoverFn('animate');
 }
+
 function mouseLeaveHandler() {
   hoverFn('normal');
 }

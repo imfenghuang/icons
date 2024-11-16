@@ -90,9 +90,11 @@ const hoverFn = type => {
   variant = variants.path[type];
   targetInstancePath.apply(variant);
 };
+
 function mouseEnterHandler() {
   hoverFn('animate');
 }
+
 function mouseLeaveHandler() {
   hoverFn('normal');
 }

@@ -95,14 +95,15 @@ const cartVariants = {
   },
 };
 
-async function mouseEnterHandler() {
+function mouseEnterHandler() {
   motionSvgInstance.apply(cartVariants.animate);
   motionSvgInstance.apply(cartVariants.hover).then(() => {
     motionSvgInstance.apply(cartVariants.repeat);
   });
   motionPathInstance.apply(lidVariants.animate);
 }
-async function mouseLeaveHandler() {
+
+function mouseLeaveHandler() {
   motionSvgInstance.apply(cartVariants.normal);
   motionPathInstance.apply(lidVariants.normal);
 }

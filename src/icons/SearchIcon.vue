@@ -52,10 +52,11 @@ const motionInstance = useMotion(target, {
   enter: variants.normal,
 });
 
-async function mouseEnterHandler() {
-  await motionInstance.apply(variants.animate);
+function mouseEnterHandler() {
+  motionInstance.apply(variants.animate);
 }
-async function mouseLeaveHandler() {
-  await motionInstance.apply(variants.normal);
+
+function mouseLeaveHandler() {
+  motionInstance.apply(variants.normal);
 }
 </script>

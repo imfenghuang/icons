@@ -76,9 +76,11 @@ const hoverFn = type => {
     instance.apply(variant);
   }
 };
+
 function mouseEnterHandler() {
   hoverFn('animate');
 }
+
 function mouseLeaveHandler() {
   hoverFn('normal');
 }
