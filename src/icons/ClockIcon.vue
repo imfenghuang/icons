@@ -29,6 +29,7 @@ export default {
   name: 'ClockIcon',
 };
 </script>
+
 <script setup>
 import { MotionComponent as Motion, useMotion } from '@vueuse/motion';
 

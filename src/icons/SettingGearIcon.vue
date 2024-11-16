@@ -32,6 +32,7 @@ export default {
   name: 'SettingGearIcon',
 };
 </script>
+
 <script setup>
 import { MotionComponent as Motion, useMotion } from '@vueuse/motion';
 

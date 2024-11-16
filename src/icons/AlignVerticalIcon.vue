@@ -38,6 +38,7 @@ export default {
   name: 'AlignVerticalIcon',
 };
 </script>
+
 <script setup>
 import { MotionComponent as Motion, useMotion } from '@vueuse/motion';
 

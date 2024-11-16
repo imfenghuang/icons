@@ -33,6 +33,7 @@ export default {
   name: 'CartIcon',
 };
 </script>
+
 <script setup>
 import { MotionComponent as Motion, useMotion } from '@vueuse/motion';
 

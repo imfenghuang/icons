@@ -34,6 +34,7 @@ export default {
   name: 'GripIcon',
 };
 </script>
+
 <script setup>
 import { MotionComponent as Motion, useMotion } from '@vueuse/motion';
 

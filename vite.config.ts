@@ -32,6 +32,9 @@ export default defineConfig(({ mode }) => {
         exclude: [/\.src\/components\/index\.ts/, /\scopy/i],
       }),
     ],
+    server: {
+      host: '0.0.0.0',
+    },
   };
   // for pages
   if (mode === 'pages') {

@@ -30,6 +30,7 @@ export default {
   name: 'SearchIcon',
 };
 </script>
+
 <script setup>
 import { MotionComponent as Motion, useMotion } from '@vueuse/motion';
 

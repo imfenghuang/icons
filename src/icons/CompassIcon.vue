@@ -33,6 +33,7 @@ export default {
   name: 'CompassIcon',
 };
 </script>
+
 <script setup>
 import { MotionComponent as Motion, useMotion } from '@vueuse/motion';
 

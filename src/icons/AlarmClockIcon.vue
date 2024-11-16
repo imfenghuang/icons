@@ -39,6 +39,7 @@ export default {
   name: 'AlarmClockIcon',
 };
 </script>
+
 <script setup>
 import { MotionComponent as Motion, useMotion } from '@vueuse/motion';
 

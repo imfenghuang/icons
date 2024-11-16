@@ -28,6 +28,7 @@ export default {
   name: 'FileStackIcon',
 };
 </script>
+
 <script setup>
 import { MotionComponent as Motion, useMotion } from '@vueuse/motion';
 

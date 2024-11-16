@@ -48,6 +48,7 @@ export default {
   name: 'SquareStackIcon',
 };
 </script>
+
 <script setup>
 import { MotionComponent as Motion, useMotion } from '@vueuse/motion';
 

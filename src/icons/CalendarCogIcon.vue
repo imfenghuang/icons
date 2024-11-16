@@ -41,6 +41,7 @@ export default {
   name: 'CalendarCogIcon',
 };
 </script>
+
 <script setup>
 import { MotionComponent as Motion, useMotion } from '@vueuse/motion';
 

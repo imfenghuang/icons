@@ -36,6 +36,7 @@ export default {
   name: 'DeleteIcon',
 };
 </script>
+
 <script setup>
 import { MotionComponent as Motion, useMotion } from '@vueuse/motion';
 

@@ -38,6 +38,7 @@ export default {
   name: 'CursorClickIcon',
 };
 </script>
+
 <script setup>
 import { MotionComponent as Motion, useMotion } from '@vueuse/motion';
 

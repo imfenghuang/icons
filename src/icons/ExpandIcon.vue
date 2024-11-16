@@ -27,6 +27,7 @@ export default {
   name: 'ExpandIcon',
 };
 </script>
+
 <script setup>
 import { MotionComponent as Motion, useMotion } from '@vueuse/motion';
 

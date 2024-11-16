@@ -31,6 +31,7 @@ export default {
   name: 'DownloadIcon',
 };
 </script>
+
 <script setup>
 import { MotionComponent as Motion, useMotion } from '@vueuse/motion';
 
