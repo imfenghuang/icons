@@ -52,6 +52,9 @@ import CogIconRaw from './CogIcon.vue?raw';
 import RabbitIconRaw from './RabbitIcon.vue?raw';
 import AlarmClockIconRaw from './AlarmClockIcon.vue?raw';
 import LoaderPinwheelIconRaw from './LoaderPinwheelIcon.vue?raw';
+import PlayIconRaw from './PlayIcon.vue?raw';
+import PauseIconRaw from './PauseIcon.vue?raw';
+
 // 512 512
 import SyringeIconRaw from './SyringeIcon.vue?raw';
 import FlaskIconRaw from './FlaskIcon.vue?raw';
@@ -336,6 +339,18 @@ export const ICON_LIST = [
       'frozen',
       'freeze',
     ],
+  },
+  {
+    name: 'PlayIcon',
+    icon: PlayIcon,
+    raw: PlayIconRaw,
+    keywords: ['video', 'play', 'start'],
+  },
+  {
+    name: 'PauseIcon',
+    icon: PauseIcon,
+    raw: PauseIconRaw,
+    keywords: ['video', 'pause', 'stop'],
   },
 
   // 512 512
