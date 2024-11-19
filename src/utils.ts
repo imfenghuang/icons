@@ -1,7 +1,22 @@
 const CompRaw = Object.fromEntries(ICON_LIST.map(v => [v.name, v.raw]));
 
-export const getCompRaw = (name: string): string => {
-  return CompRaw[name as keyof typeof CompRaw] || '';
+const rawMap = new Map();
+export const getCompRaw = async (
+  name: string,
+): Promise<{
+  raw: string;
+  status: 'success' | 'error';
+  msg?: unknown;
+}> => {
+  if (rawMap.has(name)) {
+    return { raw: rawMap.get(name), status: 'success' };
+  }
+  try {
+    const { default: raw } = await CompRaw[name as keyof typeof CompRaw]();
+    return { raw, status: 'success' };
+  } catch (err) {
+    return { raw: '', status: 'error', msg: err };
+  }
 };
 
 export const downloadFile = (fileName: string, fileContent: string): void => {

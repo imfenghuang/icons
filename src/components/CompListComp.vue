@@ -21,7 +21,13 @@
         :key="Comp.name"
         class="p-3 border border-input rounded-md flex items-center justify-center flex-col"
       >
-        <component :is="Comp" />
+        <Suspense>
+          <component :is="Comp.icon" />
+          <template #fallback>
+            <LoadingComp />
+          </template>
+        </Suspense>
+
         <p class="text-xs mt-2">{{ Comp.name }}</p>
         <OperationComp :name="Comp.name" />
       </div>
@@ -37,19 +43,19 @@ const Comps = ICON_LIST;
 
 const inputRef = ref();
 const filterName = ref('');
-const CompsFilter = shallowRef<Component[]>(Comps.map(v => v.icon));
+const CompsFilter = shallowRef(Comps);
 const isApple = ref(/iPhone|iPad|iPod|Mac\sOS/.test(navigator.userAgent) ? true : false);
 
 const updateComps = (value: string) => {
   filterName.value = value.trim();
   CompsFilter.value =
     filterName.value === ''
-      ? Comps.map(v => v.icon)
+      ? Comps
       : Comps.filter(v => {
           if (v.name.toLowerCase().includes(filterName.value.toLowerCase())) return true;
           if (v.keywords.includes(filterName.value.toLowerCase())) return true;
           return false;
-        }).map(v => v.icon);
+        });
 };
 
 function filterComps(event: Event) {

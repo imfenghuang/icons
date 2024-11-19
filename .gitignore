@@ -27,6 +27,7 @@ dist-ssr
 *build.config.ts
 src/components/*Icon.vue
 src/components/*copy*.vue
+src/components/*copy*.ts
 src/components/*HelloWorld*.vue
 src/components/AlarmClockIcon.vue
 src/components/Temp.vue

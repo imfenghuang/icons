@@ -14,7 +14,7 @@ export default defineConfig(({ mode }) => {
         include: [/\.vue$/, /\.vue\?vue/],
         extensions: ['vue'],
         dts: 'src/components.d.ts',
-        excludeNames: [/\scopy/],
+        excludeNames: [/\scopy/i],
       }),
       AutoImport({
         dirs: ['src/**/*'],

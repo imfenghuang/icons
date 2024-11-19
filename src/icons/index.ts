@@ -1,245 +1,252 @@
-import SearchIconRaw from './SearchIcon.vue?raw';
-import CartIconRaw from './CartIcon.vue?raw';
-import LayersIconRaw from './LayersIcon.vue?raw';
-import GripIconRaw from './GripIcon.vue?raw';
-import FrameIconRaw from './FrameIcon.vue?raw';
-import SunIconRaw from './SunIcon.vue?raw';
-import DeleteIconRaw from './DeleteIcon.vue?raw';
-import FileStackIconRaw from './FileStackIcon.vue?raw';
-import SettingGearIconRaw from './SettingGearIcon.vue?raw';
-import CalendarCogIconRaw from './CalendarCogIcon.vue?raw';
-import MenuIconRaw from './MenuIcon.vue?raw';
-import CopyIconRaw from './CopyIcon.vue?raw';
-import AudioLinesIconRaw from './AudioLinesIcon.vue?raw';
-import ArchiveIconRaw from './ArchiveIcon.vue?raw';
-import LogoutIconRaw from './LogoutIcon.vue?raw';
-import CircleHelpIconRaw from './CircleHelpIcon.vue?raw';
-import SquareStackIconRaw from './SquareStackIcon.vue?raw';
-import MessageCircleIconRaw from './MessageCircleIcon.vue?raw';
-import MessageCircleMoreIconRaw from './MessageCircleMoreIcon.vue?raw';
-import ArrowLeftIconRaw from './ArrowLeftIcon.vue?raw';
-import ArrowRightIconRaw from './ArrowRightIcon.vue?raw';
-import RefreshIconRaw from './RefreshIcon.vue?raw';
-import DownloadIconRaw from './DownloadIcon.vue?raw';
-import SquarePenIconRaw from './SquarePenIcon.vue?raw';
-import CursorClickIconRaw from './CursorClickIcon.vue?raw';
-import ClockIconRaw from './ClockIcon.vue?raw';
-import BadgeAlertIconRaw from './BadgeAlertIcon.vue?raw';
-import BadgePercentIconRaw from './BadgePercentIcon.vue?raw';
-import ChartPieIconRaw from './ChartPieIcon.vue?raw';
-import CompassIconRaw from './CompassIcon.vue?raw';
-import TimerIconRaw from './TimerIcon.vue?raw';
-import ExpandIconRaw from './ExpandIcon.vue?raw';
-import GaugeIconRaw from './GaugeIcon.vue?raw';
-import BoneIconRaw from './BoneIcon.vue?raw';
-import AlignCenterIconRaw from './AlignCenterIcon.vue?raw';
-import AlignHorizontalIconRaw from './AlignHorizontalIcon.vue?raw';
-import AlignVerticalIconRaw from './AlignVerticalIcon.vue?raw';
-import BellIconRaw from './BellIcon.vue?raw';
-import UpvoteIconRaw from './UpvoteIcon.vue?raw';
-import DownvoteIconRaw from './DownvoteIcon.vue?raw';
-import UsersIconRaw from './UsersIcon.vue?raw';
-import HandCoinsIconRaw from './HandCoinsIcon.vue?raw';
-import CircleChevronUpIconRaw from './CircleChevronUpIcon.vue?raw';
-import CircleChevronDownIconRaw from './CircleChevronDownIcon.vue?raw';
-import CircleChevronLeftIconRaw from './CircleChevronLeftIcon.vue?raw';
-import CircleChevronRightIconRaw from './CircleChevronRightIcon.vue?raw';
-import ChevronsUpDownIconRaw from './ChevronsUpDownIcon.vue?raw';
-import ChevronsDownUpIconRaw from './ChevronsDownUpIcon.vue?raw';
-import ChevronsLeftRightIconRaw from './ChevronsLeftRightIcon.vue?raw';
-import ChevronsRightLeftIconRaw from './ChevronsRightLeftIcon.vue?raw';
-import CogIconRaw from './CogIcon.vue?raw';
-import RabbitIconRaw from './RabbitIcon.vue?raw';
-import AlarmClockIconRaw from './AlarmClockIcon.vue?raw';
-import LoaderPinwheelIconRaw from './LoaderPinwheelIcon.vue?raw';
-import PlayIconRaw from './PlayIcon.vue?raw';
-import PauseIconRaw from './PauseIcon.vue?raw';
-
-// 512 512
-import SyringeIconRaw from './SyringeIcon.vue?raw';
-import FlaskIconRaw from './FlaskIcon.vue?raw';
-
 export const ICON_LIST = [
   {
     name: 'SearchIcon',
-    icon: SearchIcon,
-    raw: SearchIconRaw,
     keywords: ['find', 'scan', 'magnifier', 'magnifying glass'],
+    icon: defineAsyncComponent(() => import('./SearchIcon.vue')),
+    raw: () => import('./SearchIcon.vue?raw'),
   },
   {
     name: 'CartIcon',
-    icon: CartIcon,
-    raw: CartIconRaw,
     keywords: ['trolley', 'cart', 'basket', 'e-commerce', 'store', 'purchase', 'products', 'items', 'ingredients'],
+    icon: defineAsyncComponent(() => import('./CartIcon.vue')),
+    raw: () => import('./CartIcon.vue?raw'),
   },
   {
     name: 'LayersIcon',
-    icon: LayersIcon,
-    raw: LayersIconRaw,
     keywords: ['stack', 'pile', 'pages', 'sheets', 'paperwork', 'copies', 'copy'],
+    icon: defineAsyncComponent(() => import('./LayersIcon.vue')),
+    raw: () => import('./LayersIcon.vue?raw'),
   },
-  { name: 'GripIcon', icon: GripIcon, raw: GripIconRaw, keywords: ['grab', 'dots', 'handle', 'move', 'drag'] },
-  { name: 'FrameIcon', icon: FrameIcon, raw: FrameIconRaw, keywords: ['logo', 'design', 'tool'] },
-  { name: 'SunIcon', icon: SunIcon, raw: SunIconRaw, keywords: [] },
-  { name: 'DeleteIcon', icon: DeleteIcon, raw: DeleteIconRaw, keywords: [] },
+  {
+    name: 'GripIcon',
+    keywords: ['grab', 'dots', 'handle', 'move', 'drag'],
+    icon: defineAsyncComponent(() => import('./GripIcon.vue')),
+    raw: () => import('./GripIcon.vue?raw'),
+  },
+  {
+    name: 'FrameIcon',
+    keywords: ['logo', 'design', 'tool'],
+    icon: defineAsyncComponent(() => import('./FrameIcon.vue')),
+    raw: () => import('./FrameIcon.vue?raw'),
+  },
+  {
+    name: 'SunIcon',
+    keywords: [],
+    icon: defineAsyncComponent(() => import('./SunIcon.vue')),
+    raw: () => import('./SunIcon.vue?raw'),
+  },
+  {
+    name: 'DeleteIcon',
+    keywords: [],
+    icon: defineAsyncComponent(() => import('./DeleteIcon.vue')),
+    raw: () => import('./DeleteIcon.vue?raw'),
+  },
   {
     name: 'FileStackIcon',
-    icon: FileStackIcon,
-    raw: FileStackIconRaw,
     keywords: [],
+    icon: defineAsyncComponent(() => import('./FileStackIcon.vue')),
+    raw: () => import('./FileStackIcon.vue?raw'),
   },
   {
     name: 'SettingGearIcon',
-    icon: SettingGearIcon,
-    raw: SettingGearIconRaw,
     keywords: [],
+    icon: defineAsyncComponent(() => import('./SettingGearIcon.vue')),
+    raw: () => import('./SettingGearIcon.vue?raw'),
   },
   {
     name: 'CalendarCogIcon',
-    icon: CalendarCogIcon,
-    raw: CalendarCogIconRaw,
     keywords: [],
+    icon: defineAsyncComponent(() => import('./CalendarCogIcon.vue')),
+    raw: () => import('./CalendarCogIcon.vue?raw'),
   },
-  { name: 'MenuIcon', icon: MenuIcon, raw: MenuIconRaw, keywords: [] },
-  { name: 'CopyIcon', icon: CopyIcon, raw: CopyIconRaw, keywords: [] },
+  {
+    name: 'MenuIcon',
+    keywords: [],
+    icon: defineAsyncComponent(() => import('./MenuIcon.vue')),
+    raw: () => import('./MenuIcon.vue?raw'),
+  },
+  {
+    name: 'CopyIcon',
+    keywords: [],
+    icon: defineAsyncComponent(() => import('./CopyIcon.vue')),
+    raw: () => import('./CopyIcon.vue?raw'),
+  },
   {
     name: 'AudioLinesIcon',
-    icon: AudioLinesIcon,
-    raw: AudioLinesIconRaw,
     keywords: [],
+    icon: defineAsyncComponent(() => import('./AudioLinesIcon.vue')),
+    raw: () => import('./AudioLinesIcon.vue?raw'),
   },
-  { name: 'ArchiveIcon', icon: ArchiveIcon, raw: ArchiveIconRaw, keywords: [] },
-  { name: 'LogoutIcon', icon: LogoutIcon, raw: LogoutIconRaw, keywords: [] },
+  {
+    name: 'ArchiveIcon',
+    keywords: [],
+    icon: defineAsyncComponent(() => import('./ArchiveIcon.vue')),
+    raw: () => import('./ArchiveIcon.vue?raw'),
+  },
+  {
+    name: 'LogoutIcon',
+    keywords: [],
+    icon: defineAsyncComponent(() => import('./LogoutIcon.vue')),
+    raw: () => import('./LogoutIcon.vue?raw'),
+  },
   {
     name: 'CircleHelpIcon',
-    icon: CircleHelpIcon,
-    raw: CircleHelpIconRaw,
     keywords: [],
+    icon: defineAsyncComponent(() => import('./CircleHelpIcon.vue')),
+    raw: () => import('./CircleHelpIcon.vue?raw'),
   },
   {
     name: 'SquareStackIcon',
-    icon: SquareStackIcon,
-    raw: SquareStackIconRaw,
     keywords: [],
+    icon: defineAsyncComponent(() => import('./SquareStackIcon.vue')),
+    raw: () => import('./SquareStackIcon.vue?raw'),
   },
   {
     name: 'MessageCircleIcon',
-    icon: MessageCircleIcon,
-    raw: MessageCircleIconRaw,
     keywords: [],
+    icon: defineAsyncComponent(() => import('./MessageCircleIcon.vue')),
+    raw: () => import('./MessageCircleIcon.vue?raw'),
   },
   {
     name: 'MessageCircleMoreIcon',
-    icon: MessageCircleMoreIcon,
-    raw: MessageCircleMoreIconRaw,
     keywords: [],
+    icon: defineAsyncComponent(() => import('./MessageCircleMoreIcon.vue')),
+    raw: () => import('./MessageCircleMoreIcon.vue?raw'),
   },
   {
     name: 'ArrowLeftIcon',
-    icon: ArrowLeftIcon,
-    raw: ArrowLeftIconRaw,
     keywords: [],
+    icon: defineAsyncComponent(() => import('./ArrowLeftIcon.vue')),
+    raw: () => import('./ArrowLeftIcon.vue?raw'),
   },
   {
     name: 'ArrowRightIcon',
-    icon: ArrowRightIcon,
-    raw: ArrowRightIconRaw,
     keywords: [],
+    icon: defineAsyncComponent(() => import('./ArrowRightIcon.vue')),
+    raw: () => import('./ArrowRightIcon.vue?raw'),
   },
-  { name: 'RefreshIcon', icon: RefreshIcon, raw: RefreshIconRaw, keywords: [] },
+  {
+    name: 'RefreshIcon',
+    keywords: [],
+    icon: defineAsyncComponent(() => import('./RefreshIcon.vue')),
+    raw: () => import('./RefreshIcon.vue?raw'),
+  },
   {
     name: 'DownloadIcon',
-    icon: DownloadIcon,
-    raw: DownloadIconRaw,
     keywords: [],
+    icon: defineAsyncComponent(() => import('./DownloadIcon.vue')),
+    raw: () => import('./DownloadIcon.vue?raw'),
   },
   {
     name: 'SquarePenIcon',
-    icon: SquarePenIcon,
-    raw: SquarePenIconRaw,
     keywords: [],
+    icon: defineAsyncComponent(() => import('./SquarePenIcon.vue')),
+    raw: () => import('./SquarePenIcon.vue?raw'),
   },
   {
     name: 'CursorClickIcon',
-    icon: CursorClickIcon,
-    raw: CursorClickIconRaw,
     keywords: [],
+    icon: defineAsyncComponent(() => import('./CursorClickIcon.vue')),
+    raw: () => import('./CursorClickIcon.vue?raw'),
   },
-  { name: 'ClockIcon', icon: ClockIcon, raw: ClockIconRaw, keywords: [] },
+  {
+    name: 'ClockIcon',
+    keywords: [],
+    icon: defineAsyncComponent(() => import('./ClockIcon.vue')),
+    raw: () => import('./ClockIcon.vue?raw'),
+  },
   {
     name: 'BadgeAlertIcon',
-    icon: BadgeAlertIcon,
-    raw: BadgeAlertIconRaw,
     keywords: [],
+    icon: defineAsyncComponent(() => import('./BadgeAlertIcon.vue')),
+    raw: () => import('./BadgeAlertIcon.vue?raw'),
   },
   {
     name: 'BadgePercentIcon',
-    icon: BadgePercentIcon,
-    raw: BadgePercentIconRaw,
     keywords: [],
+    icon: defineAsyncComponent(() => import('./BadgePercentIcon.vue')),
+    raw: () => import('./BadgePercentIcon.vue?raw'),
   },
   {
     name: 'ChartPieIcon',
-    icon: ChartPieIcon,
-    raw: ChartPieIconRaw,
     keywords: [],
+    icon: defineAsyncComponent(() => import('./ChartPieIcon.vue')),
+    raw: () => import('./ChartPieIcon.vue?raw'),
   },
   {
     name: 'CompassIcon',
-    icon: CompassIcon,
-    raw: CompassIconRaw,
     keywords: ['direction', 'navigation', 'north', 'south', 'east', 'west', 'compass'],
+    icon: defineAsyncComponent(() => import('./CompassIcon.vue')),
+    raw: () => import('./CompassIcon.vue?raw'),
   },
   {
     name: 'TimerIcon',
-    icon: TimerIcon,
-    raw: TimerIconRaw,
     keywords: ['time', 'watch', 'alarm', 'stopwatch', 'stopwatch'],
+    icon: defineAsyncComponent(() => import('./TimerIcon.vue')),
+    raw: () => import('./TimerIcon.vue?raw'),
   },
-  { name: 'ExpandIcon', icon: ExpandIcon, raw: ExpandIconRaw, keywords: ['scale', 'fullscreen'] },
+  {
+    name: 'ExpandIcon',
+    keywords: ['scale', 'fullscreen'],
+    icon: defineAsyncComponent(() => import('./ExpandIcon.vue')),
+    raw: () => import('./ExpandIcon.vue?raw'),
+  },
   {
     name: 'GaugeIcon',
-    icon: GaugeIcon,
-    raw: GaugeIconRaw,
     keywords: ['dashboard', 'dial', 'meter', 'speed', 'pressure', 'measure', 'level'],
+    icon: defineAsyncComponent(() => import('./GaugeIcon.vue')),
+    raw: () => import('./GaugeIcon.vue?raw'),
   },
   {
     name: 'BoneIcon',
-    icon: BoneIcon,
-    raw: BoneIconRaw,
     keywords: ['health', 'skeleton', 'skull', 'death', 'pets', 'dog'],
+    icon: defineAsyncComponent(() => import('./BoneIcon.vue')),
+    raw: () => import('./BoneIcon.vue?raw'),
   },
   {
     name: 'AlignCenterIcon',
-    icon: AlignCenterIcon,
-    raw: AlignCenterIconRaw,
     keywords: ['text', 'alignment', 'center'],
+    icon: defineAsyncComponent(() => import('./AlignCenterIcon.vue')),
+    raw: () => import('./AlignCenterIcon.vue?raw'),
   },
   {
     name: 'AlignHorizontalIcon',
-    icon: AlignHorizontalIcon,
-    raw: AlignHorizontalIconRaw,
     keywords: ['center', 'items', 'flex', 'justify', 'distribute', 'between'],
+    icon: defineAsyncComponent(() => import('./AlignHorizontalIcon.vue')),
+    raw: () => import('./AlignHorizontalIcon.vue?raw'),
   },
   {
     name: 'AlignVerticalIcon',
-    icon: AlignVerticalIcon,
-    raw: AlignVerticalIconRaw,
     keywords: ['center', 'items', 'flex', 'justify', 'distribute', 'between'],
+    icon: defineAsyncComponent(() => import('./AlignVerticalIcon.vue')),
+    raw: () => import('./AlignVerticalIcon.vue?raw'),
   },
-  { name: 'BellIcon', icon: BellIcon, raw: BellIconRaw, keywords: ['alarm', 'notification', 'sound', 'reminder'] },
-  { name: 'UpvoteIcon', icon: UpvoteIcon, raw: UpvoteIconRaw, keywords: ['like', 'good', 'emotion'] },
+  {
+    name: 'BellIcon',
+    keywords: ['alarm', 'notification', 'sound', 'reminder'],
+    icon: defineAsyncComponent(() => import('./BellIcon.vue')),
+    raw: () => import('./BellIcon.vue?raw'),
+  },
+  {
+    name: 'UpvoteIcon',
+    keywords: ['like', 'good', 'emotion'],
+    icon: defineAsyncComponent(() => import('./UpvoteIcon.vue')),
+    raw: () => import('./UpvoteIcon.vue?raw'),
+  },
   {
     name: 'DownvoteIcon',
-    icon: DownvoteIcon,
-    raw: DownvoteIconRaw,
     keywords: ['dislike', 'bad', 'emotion'],
+    icon: defineAsyncComponent(() => import('./DownvoteIcon.vue')),
+    raw: () => import('./DownvoteIcon.vue?raw'),
   },
-  { name: 'UsersIcon', icon: UsersIcon, raw: UsersIconRaw, keywords: ['group', 'people'] },
+  {
+    name: 'UsersIcon',
+    keywords: ['group', 'people'],
+    icon: defineAsyncComponent(() => import('./UsersIcon.vue')),
+    raw: () => import('./UsersIcon.vue?raw'),
+  },
   {
     name: 'HandCoinsIcon',
-    icon: HandCoinsIcon,
-    raw: HandCoinsIconRaw,
     keywords: [
       'savings',
       'banking',
@@ -256,77 +263,77 @@ export const ICON_LIST = [
       'handout',
       'pennies',
     ],
+    icon: defineAsyncComponent(() => import('./HandCoinsIcon.vue')),
+    raw: () => import('./HandCoinsIcon.vue?raw'),
   },
   {
     name: 'CircleChevronUpIcon',
-    icon: CircleChevronUpIcon,
-    raw: CircleChevronUpIconRaw,
     keywords: ['caret', 'ahead', 'forward', 'menu', 'chevron'],
+    icon: defineAsyncComponent(() => import('./CircleChevronUpIcon.vue')),
+    raw: () => import('./CircleChevronUpIcon.vue?raw'),
   },
   {
     name: 'CircleChevronDownIcon',
-    icon: CircleChevronDownIcon,
-    raw: CircleChevronDownIconRaw,
     keywords: ['back', 'menu', 'chevron'],
+    icon: defineAsyncComponent(() => import('./CircleChevronDownIcon.vue')),
+    raw: () => import('./CircleChevronDownIcon.vue?raw'),
   },
   {
     name: 'CircleChevronLeftIcon',
-    icon: CircleChevronLeftIcon,
-    raw: CircleChevronLeftIconRaw,
     keywords: ['back', 'previous', 'less than', 'fewer', 'menu', '<', 'chevron'],
+    icon: defineAsyncComponent(() => import('./CircleChevronLeftIcon.vue')),
+    raw: () => import('./CircleChevronLeftIcon.vue?raw'),
   },
   {
     name: 'CircleChevronRightIcon',
-    icon: CircleChevronRightIcon,
-    raw: CircleChevronRightIconRaw,
     keywords: ['next', 'forward', 'more than', 'greater', 'menu', '>', 'chevron'],
+    icon: defineAsyncComponent(() => import('./CircleChevronRightIcon.vue')),
+    raw: () => import('./CircleChevronRightIcon.vue?raw'),
   },
   {
     name: 'ChevronsUpDownIcon',
-    icon: ChevronsUpDownIcon,
-    raw: ChevronsUpDownIconRaw,
     keywords: ['expand', 'unfold', 'vertical', 'chevron'],
+    icon: defineAsyncComponent(() => import('./ChevronsUpDownIcon.vue')),
+    raw: () => import('./ChevronsUpDownIcon.vue?raw'),
   },
   {
     name: 'ChevronsDownUpIcon',
-    icon: ChevronsDownUpIcon,
-    raw: ChevronsDownUpIconRaw,
     keywords: ['collapse', 'fold', 'vertical', 'chevron'],
+    icon: defineAsyncComponent(() => import('./ChevronsDownUpIcon.vue')),
+    raw: () => import('./ChevronsDownUpIcon.vue?raw'),
   },
   {
     name: 'ChevronsLeftRightIcon',
-    icon: ChevronsLeftRightIcon,
-    raw: ChevronsLeftRightIconRaw,
     keywords: ['expand', 'unfold', 'horizontal', 'chevron'],
+    icon: defineAsyncComponent(() => import('./ChevronsLeftRightIcon.vue')),
+    raw: () => import('./ChevronsLeftRightIcon.vue?raw'),
   },
   {
     name: 'ChevronsRightLeftIcon',
-    icon: ChevronsRightLeftIcon,
-    raw: ChevronsRightLeftIconRaw,
     keywords: ['collapse', 'fold', 'horizontal', 'chevron'],
+    icon: defineAsyncComponent(() => import('./ChevronsRightLeftIcon.vue')),
+    raw: () => import('./ChevronsRightLeftIcon.vue?raw'),
   },
   {
     name: 'CogIcon',
-    icon: CogIcon,
-    raw: CogIconRaw,
     keywords: [],
+    icon: defineAsyncComponent(() => import('./CogIcon.vue')),
+    raw: () => import('./CogIcon.vue?raw'),
   },
   {
     name: 'RabbitIcon',
-    icon: RabbitIcon,
-    raw: RabbitIconRaw,
     keywords: [],
+    icon: defineAsyncComponent(() => import('./RabbitIcon.vue')),
+    raw: () => import('./RabbitIcon.vue?raw'),
   },
   {
     name: 'AlarmClockIcon',
-    icon: AlarmClockIcon,
-    raw: AlarmClockIconRaw,
     keywords: ['morning'],
+    icon: defineAsyncComponent(() => import('./AlarmClockIcon.vue')),
+    raw: () => import('./AlarmClockIcon.vue?raw'),
   },
   {
     name: 'LoaderPinwheelIcon',
-    icon: LoaderPinwheelIcon,
-    raw: LoaderPinwheelIconRaw,
     keywords: [
       'loading',
       'wait',
@@ -339,31 +346,31 @@ export const ICON_LIST = [
       'frozen',
       'freeze',
     ],
+    icon: defineAsyncComponent(() => import('./LoaderPinwheelIcon.vue')),
+    raw: () => import('./LoaderPinwheelIcon.vue?raw'),
   },
   {
     name: 'PlayIcon',
-    icon: PlayIcon,
-    raw: PlayIconRaw,
     keywords: ['video', 'play', 'start'],
+    icon: defineAsyncComponent(() => import('./PlayIcon.vue')),
+    raw: () => import('./PlayIcon.vue?raw'),
   },
   {
     name: 'PauseIcon',
-    icon: PauseIcon,
-    raw: PauseIconRaw,
     keywords: ['video', 'pause', 'stop'],
+    icon: defineAsyncComponent(() => import('./PauseIcon.vue')),
+    raw: () => import('./PauseIcon.vue?raw'),
   },
-
-  // 512 512
   {
     name: 'SyringeIcon',
-    icon: SyringeIcon,
-    raw: SyringeIconRaw,
     keywords: ['medicine', 'medical', 'needle', 'pump', 'plunger', 'nozzle', 'blood'],
+    icon: defineAsyncComponent(() => import('./SyringeIcon.vue')),
+    raw: () => import('./SyringeIcon.vue?raw'),
   },
   {
     name: 'FlaskIcon',
-    icon: FlaskIcon,
-    raw: FlaskIconRaw,
     keywords: ['beaker', 'erlenmeyer', 'lab', 'chemistry', 'experiment', 'test'],
+    icon: defineAsyncComponent(() => import('./FlaskIcon.vue')),
+    raw: () => import('./FlaskIcon.vue?raw'),
   },
 ];

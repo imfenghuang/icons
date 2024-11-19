@@ -42,14 +42,32 @@ const sourceLink = computed(() => {
 
 const className = ref('cursor-pointer hover:bg-accent rounded-md p-2 transition-colors duration-200');
 
-const source = ref(getCompRaw(props.name));
+const source = ref('');
 const { copy, copied } = useClipboard({ source });
 
-const copyHandler = () => {
-  copy(source.value);
+const isLoading = ref(false);
+
+const copyHandler = async () => {
+  if (isLoading.value) return;
+  isLoading.value = true;
+  getCompRaw(props.name)
+    .then(({ raw }) => {
+      source.value = raw;
+      copy(source.value);
+    })
+    .finally(() => (isLoading.value = false));
 };
 
-const downloadHandler = () => {
-  downloadFile(`${props.name}.vue`, source.value);
+const downloadHandler = async () => {
+  if (isLoading.value) return;
+  isLoading.value = true;
+  getCompRaw(props.name)
+    .then(({ raw }) => {
+      source.value = raw;
+      if (raw) {
+        downloadFile(`${props.name}.vue`, source.value);
+      }
+    })
+    .finally(() => (isLoading.value = false));
 };
 </script>
