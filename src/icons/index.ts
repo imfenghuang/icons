@@ -362,6 +362,12 @@ export const ICON_LIST = [
     raw: () => import('./PauseIcon.vue?raw'),
   },
   {
+    name: 'ShowerHeadIcon',
+    keywords: ['shower', 'bath', 'bathroom', 'amenities', 'services'],
+    icon: defineAsyncComponent(() => import('./ShowerHeadIcon.vue')),
+    raw: () => import('./ShowerHeadIcon.vue?raw'),
+  },
+  {
     name: 'SyringeIcon',
     keywords: ['medicine', 'medical', 'needle', 'pump', 'plunger', 'nozzle', 'blood'],
     icon: defineAsyncComponent(() => import('./SyringeIcon.vue')),
