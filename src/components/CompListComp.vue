@@ -56,6 +56,7 @@ const updateComps = (value: string) => {
           if (v.keywords.includes(filterName.value.toLowerCase())) return true;
           return false;
         });
+  updateQuery(filterName.value);
 };
 
 function filterComps(event: Event) {
@@ -78,6 +79,16 @@ const initQuery = () => {
   if (q) {
     updateComps(q);
   }
+};
+
+const updateQuery = (value: string) => {
+  const url = new URL(window.location.href);
+  if (value === '') {
+    url.searchParams.delete('q');
+  } else {
+    url.searchParams.set('q', value);
+  }
+  window.history.replaceState({}, '', url);
 };
 
 onMounted(() => {
