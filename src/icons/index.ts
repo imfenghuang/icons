@@ -406,6 +406,12 @@ export const ICON_LIST = [
     raw: () => import('./ClapIcon.vue?raw'),
   },
   {
+    name: 'WifiIcon',
+    keywords: ['internet', 'electronic', 'connection', 'data'],
+    icon: defineAsyncComponent(() => import('./WifiIcon.vue')),
+    raw: () => import('./WifiIcon.vue?raw'),
+  },
+  {
     name: 'SyringeIcon',
     keywords: ['medicine', 'medical', 'needle', 'pump', 'plunger', 'nozzle', 'blood'],
     icon: defineAsyncComponent(() => import('./SyringeIcon.vue')),
