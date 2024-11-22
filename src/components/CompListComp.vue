@@ -73,8 +73,16 @@ const searchHandler = (event: KeyboardEvent) => {
   }
 };
 
+const initQuery = () => {
+  const q = new URLSearchParams(window.location.search).get('q') || '';
+  if (q) {
+    updateComps(q);
+  }
+};
+
 onMounted(() => {
   document.addEventListener('keydown', searchHandler);
+  initQuery();
 });
 
 onUnmounted(() => {

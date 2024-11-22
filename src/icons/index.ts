@@ -412,6 +412,12 @@ export const ICON_LIST = [
     raw: () => import('./WifiIcon.vue?raw'),
   },
   {
+    name: 'DrumIcon',
+    keywords: ['music', 'instrument', 'percussion', 'beat', 'rhythm', 'sound'],
+    icon: defineAsyncComponent(() => import('./DrumIcon.vue')),
+    raw: () => import('./DrumIcon.vue?raw'),
+  },
+  {
     name: 'SyringeIcon',
     keywords: ['medicine', 'medical', 'needle', 'pump', 'plunger', 'nozzle', 'blood'],
     icon: defineAsyncComponent(() => import('./SyringeIcon.vue')),
