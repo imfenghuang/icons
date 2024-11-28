@@ -418,6 +418,18 @@ export const ICON_LIST = [
     raw: () => import('./DrumIcon.vue?raw'),
   },
   {
+    name: 'CctvIcon',
+    keywords: ['cctv', 'camera', 'surveillance', 'recording', 'film', 'videotape', 'crime', 'watching'],
+    icon: defineAsyncComponent(() => import('./CctvIcon.vue')),
+    raw: () => import('./CctvIcon.vue?raw'),
+  },
+  {
+    name: 'CoffeeIcon',
+    keywords: ['coffee', 'drink', 'cup', 'mug', 'tea', 'cafe', 'hot', 'beverage'],
+    icon: defineAsyncComponent(() => import('./CoffeeIcon.vue')),
+    raw: () => import('./CoffeeIcon.vue?raw'),
+  },
+  {
     name: 'SyringeIcon',
     keywords: ['medicine', 'medical', 'needle', 'pump', 'plunger', 'nozzle', 'blood'],
     icon: defineAsyncComponent(() => import('./SyringeIcon.vue')),
