@@ -430,6 +430,12 @@ export const ICON_LIST = [
     raw: () => import('./CoffeeIcon.vue?raw'),
   },
   {
+    name: 'BookTextIcon',
+    keywords: ['reading', 'booklet', 'magazine', 'leaflet', 'pamphlet', 'tome', 'library'],
+    icon: defineAsyncComponent(() => import('./BookTextIcon.vue')),
+    raw: () => import('./BookTextIcon.vue?raw'),
+  },
+  {
     name: 'SyringeIcon',
     keywords: ['medicine', 'medical', 'needle', 'pump', 'plunger', 'nozzle', 'blood'],
     icon: defineAsyncComponent(() => import('./SyringeIcon.vue')),
