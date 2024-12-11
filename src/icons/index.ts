@@ -436,6 +436,12 @@ export const ICON_LIST = [
     raw: () => import('./BookTextIcon.vue?raw'),
   },
   {
+    name: 'AngryIcon',
+    keywords: ['mad', 'upset', 'angry', 'furious', 'emotion', 'face'],
+    icon: defineAsyncComponent(() => import('./AngryIcon.vue')),
+    raw: () => import('./AngryIcon.vue?raw'),
+  },
+  {
     name: 'SyringeIcon',
     keywords: ['medicine', 'medical', 'needle', 'pump', 'plunger', 'nozzle', 'blood'],
     icon: defineAsyncComponent(() => import('./SyringeIcon.vue')),
