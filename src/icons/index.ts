@@ -442,6 +442,12 @@ export const ICON_LIST = [
     raw: () => import('./AngryIcon.vue?raw'),
   },
   {
+    name: 'CircleCheckIcon',
+    keywords: ['done', 'todo', 'tick', 'complete', 'task'],
+    icon: defineAsyncComponent(() => import('./CircleCheckIcon.vue')),
+    raw: () => import('./CircleCheckIcon.vue?raw'),
+  },
+  {
     name: 'SyringeIcon',
     keywords: ['medicine', 'medical', 'needle', 'pump', 'plunger', 'nozzle', 'blood'],
     icon: defineAsyncComponent(() => import('./SyringeIcon.vue')),
