@@ -1,4 +1,4 @@
-<template>
+const n=`<template>
   <div
     className="cursor-pointer select-none p-2 hover:bg-accent rounded-md transition-colors duration-200 flex items-center justify-center"
     @mouseenter="mouseEnterHandler"
@@ -30,7 +30,7 @@
 export default {
   name: 'ActivityIcon',
 };
-</script>
+<\/script>
 
 <script setup>
 import { MotionComponent as Motion, useMotion } from '@vueuse/motion';
@@ -74,9 +74,10 @@ function mouseEnterHandler() {
 }
 
 function mouseLeaveHandler() {
-  // if mouseenter and then quickly mouseleave, the rest `stroke-dashoffset` will
+  // if mouseenter and then quickly mouseleave, the rest \`stroke-dashoffset\` will
   // still duration 600ms, but the rest offset is less then 50, so the speed is
   // different, obviously slower. So remove the mouseleave animation.
   // hoverFn('normal');
 }
-</script>
+<\/script>
+`;export{n as default};
