@@ -240,6 +240,12 @@ export const ICON_LIST = [
     raw: () => import('./DownvoteIcon.vue?raw'),
   },
   {
+    name: 'UserIcon',
+    keywords: ['person', 'account', 'contact'],
+    icon: defineAsyncComponent(() => import('./UserIcon.vue')),
+    raw: () => import('./UserIcon.vue?raw'),
+  },
+  {
     name: 'UsersIcon',
     keywords: ['group', 'people'],
     icon: defineAsyncComponent(() => import('./UsersIcon.vue')),
@@ -480,6 +486,12 @@ export const ICON_LIST = [
     ],
     icon: defineAsyncComponent(() => import('./ActivityIcon.vue')),
     raw: () => import('./ActivityIcon.vue?raw'),
+  },
+  {
+    name: 'AttachFileIcon',
+    keywords: ['attachment', 'file'],
+    icon: defineAsyncComponent(() => import('./AttachFileIcon.vue')),
+    raw: () => import('./AttachFileIcon.vue?raw'),
   },
   {
     name: 'SyringeIcon',
