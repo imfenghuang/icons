@@ -524,6 +524,12 @@ export const ICON_LIST = [
     raw: () => import('./TrendingUpDownIcon.vue?raw'),
   },
   {
+    name: 'AtSignIcon',
+    keywords: ['mention', 'at', 'email', 'message', '@'],
+    icon: defineAsyncComponent(() => import('./AtSignIcon.vue')),
+    raw: () => import('./AtSignIcon.vue?raw'),
+  },
+  {
     name: 'SyringeIcon',
     keywords: ['medicine', 'medical', 'needle', 'pump', 'plunger', 'nozzle', 'blood'],
     icon: defineAsyncComponent(() => import('./SyringeIcon.vue')),
