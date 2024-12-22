@@ -551,6 +551,23 @@ export const ICON_LIST = [
     raw: () => import('./BanIcon.vue?raw'),
   },
   {
+    name: 'ScanLineIcon',
+    keywords: [
+      'checkout',
+      'cart',
+      'transaction',
+      'purchase',
+      'buy',
+      'product',
+      'packaging',
+      'retail',
+      'consumer',
+      'qr-code',
+    ],
+    icon: defineAsyncComponent(() => import('./ScanLineIcon.vue')),
+    raw: () => import('./ScanLineIcon.vue?raw'),
+  },
+  {
     name: 'SyringeIcon',
     keywords: ['medicine', 'medical', 'needle', 'pump', 'plunger', 'nozzle', 'blood'],
     icon: defineAsyncComponent(() => import('./SyringeIcon.vue')),
