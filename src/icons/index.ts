@@ -644,4 +644,10 @@ export const ICON_LIST = [
     icon: defineAsyncComponent(() => import('./ArrowDownZAIcon.vue')),
     raw: () => import('./ArrowDownZAIcon.vue?raw'),
   },
+  {
+    name: 'NfcIcon',
+    keywords: ['contactless', 'payment', 'near-field communication'],
+    icon: defineAsyncComponent(() => import('./NfcIcon.vue')),
+    raw: () => import('./NfcIcon.vue?raw'),
+  },
 ];
