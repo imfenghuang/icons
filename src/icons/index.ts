@@ -650,4 +650,16 @@ export const ICON_LIST = [
     icon: defineAsyncComponent(() => import('./NfcIcon.vue')),
     raw: () => import('./NfcIcon.vue?raw'),
   },
+  {
+    name: 'CheckIcon',
+    keywords: ['done', 'todo', 'tick', 'complete', 'task'],
+    icon: defineAsyncComponent(() => import('./CheckIcon.vue')),
+    raw: () => import('./CheckIcon.vue?raw'),
+  },
+  {
+    name: 'CheckCheckIcon',
+    keywords: ['done', 'received', 'double', 'todo', 'tick', 'complete', 'task'],
+    icon: defineAsyncComponent(() => import('./CheckCheckIcon.vue')),
+    raw: () => import('./CheckCheckIcon.vue?raw'),
+  },
 ];
