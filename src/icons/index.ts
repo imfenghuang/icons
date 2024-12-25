@@ -752,4 +752,10 @@ export const ICON_LIST = [
     icon: defineAsyncComponent(() => import('./XIcon.vue')),
     raw: () => import('./XIcon.vue?raw'),
   },
+  {
+    name: 'TerminalIcon',
+    keywords: ['code', 'command line', 'prompt', 'shell'],
+    icon: defineAsyncComponent(() => import('./TerminalIcon.vue')),
+    raw: () => import('./TerminalIcon.vue?raw'),
+  },
 ];
