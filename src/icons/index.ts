@@ -746,4 +746,10 @@ export const ICON_LIST = [
     icon: defineAsyncComponent(() => import('./CpuIcon.vue')),
     raw: () => import('./CpuIcon.vue?raw'),
   },
+  {
+    name: 'XIcon',
+    keywords: ['cancel', 'close', 'delete', 'remove', 'times', 'clear', 'math', 'multiply', 'multiplication'],
+    icon: defineAsyncComponent(() => import('./XIcon.vue')),
+    raw: () => import('./XIcon.vue?raw'),
+  },
 ];
