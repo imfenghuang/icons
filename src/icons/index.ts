@@ -758,4 +758,10 @@ export const ICON_LIST = [
     icon: defineAsyncComponent(() => import('./TerminalIcon.vue')),
     raw: () => import('./TerminalIcon.vue?raw'),
   },
+  {
+    name: 'WebhookIcon',
+    keywords: ['push api', 'interface', 'callback'],
+    icon: defineAsyncComponent(() => import('./WebhookIcon.vue')),
+    raw: () => import('./WebhookIcon.vue?raw'),
+  },
 ];
