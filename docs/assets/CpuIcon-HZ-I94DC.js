@@ -1,4 +1,4 @@
-<template>
+const n=`<template>
   <div
     className="cursor-pointer select-none p-2 hover:bg-accent rounded-md transition-colors duration-200 flex items-center justify-center"
     @mouseenter="mouseEnterHandler"
@@ -35,7 +35,7 @@
 export default {
   name: 'CpuIcon',
 };
-</script>
+<\/script>
 
 <script setup>
 import { MotionComponent as Motion, useMotion } from '@vueuse/motion';
@@ -101,7 +101,7 @@ const variants = {
   animate: i => {
     return {
       opacity: [1, 0.8, 1],
-      [`scale${paths[i].direction}`]: [1, 1.5, 1],
+      [\`scale\${paths[i].direction}\`]: [1, 1.5, 1],
     };
   },
 };
@@ -141,4 +141,5 @@ function mouseEnterHandler() {
 function mouseLeaveHandler() {
   hoverFn('normal');
 }
-</script>
+<\/script>
+`;export{n as default};
