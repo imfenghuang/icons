@@ -48,12 +48,14 @@ const isApple = ref(/iPhone|iPad|iPod|Mac\sOS/.test(navigator.userAgent) ? true 
 
 const updateComps = (value: string) => {
   filterName.value = value.trim();
+  const formatFilterName = filterName.value.toLowerCase();
   CompsFilter.value =
     filterName.value === ''
       ? Comps
       : Comps.filter(v => {
-          if (v.name.toLowerCase().includes(filterName.value.toLowerCase())) return true;
-          if (v.keywords.includes(filterName.value.toLowerCase())) return true;
+          if (v.name.toLowerCase().includes(formatFilterName)) return true;
+          if (v.keywords.includes(formatFilterName)) return true;
+          if (v.keywords.some(keyword => keyword.includes(formatFilterName))) return true;
           return false;
         });
   updateQuery(filterName.value);

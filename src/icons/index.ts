@@ -764,4 +764,16 @@ export const ICON_LIST = [
     icon: defineAsyncComponent(() => import('./WebhookIcon.vue')),
     raw: () => import('./WebhookIcon.vue?raw'),
   },
+  {
+    name: 'SlidersHorizontalIcon',
+    keywords: ['settings', 'filters', 'controls'],
+    icon: defineAsyncComponent(() => import('./SlidersHorizontalIcon.vue')),
+    raw: () => import('./SlidersHorizontalIcon.vue?raw'),
+  },
+  {
+    name: 'SlidersVerticalIcon',
+    keywords: ['settings', 'filters', 'controls'],
+    icon: defineAsyncComponent(() => import('./SlidersVerticalIcon.vue')),
+    raw: () => import('./SlidersVerticalIcon.vue?raw'),
+  },
 ];
