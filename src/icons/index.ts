@@ -794,4 +794,10 @@ export const ICON_LIST = [
     icon: defineAsyncComponent(() => import('./UnderlineIcon.vue')),
     raw: () => import('./UnderlineIcon.vue?raw'),
   },
+  {
+    name: 'FingerprintIcon',
+    keywords: ['2fa', 'authentication', 'biometric', 'identity', 'security'],
+    icon: defineAsyncComponent(() => import('./FingerprintIcon.vue')),
+    raw: () => import('./FingerprintIcon.vue?raw'),
+  },
 ];
