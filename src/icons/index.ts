@@ -800,4 +800,22 @@ export const ICON_LIST = [
     icon: defineAsyncComponent(() => import('./FingerprintIcon.vue')),
     raw: () => import('./FingerprintIcon.vue?raw'),
   },
+  {
+    name: 'HouseIcon',
+    keywords: ['home', 'living', 'building', 'residence', 'architecture'],
+    icon: defineAsyncComponent(() => import('./HouseIcon.vue')),
+    raw: () => import('./HouseIcon.vue?raw'),
+  },
+  {
+    name: 'FilePenLineIcon',
+    keywords: ['edit', 'file'],
+    icon: defineAsyncComponent(() => import('./FilePenLineIcon.vue')),
+    raw: () => import('./FilePenLineIcon.vue?raw'),
+  },
+  {
+    name: 'FilePenIcon',
+    keywords: ['edit', 'file', 'signature'],
+    icon: defineAsyncComponent(() => import('./FilePenIcon.vue')),
+    raw: () => import('./FilePenIcon.vue?raw'),
+  },
 ];
