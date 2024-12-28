@@ -818,4 +818,28 @@ export const ICON_LIST = [
     icon: defineAsyncComponent(() => import('./FilePenIcon.vue')),
     raw: () => import('./FilePenIcon.vue?raw'),
   },
+  {
+    name: 'ChartLineIcon',
+    keywords: ['statistics', 'analytics', 'diagram', 'graph'],
+    icon: defineAsyncComponent(() => import('./ChartLineIcon.vue')),
+    raw: () => import('./ChartLineIcon.vue?raw'),
+  },
+  {
+    name: 'ChartSplineIcon',
+    keywords: [
+      'statistics',
+      'analytics',
+      'diagram',
+      'graph',
+      'curve',
+      'continuous',
+      'smooth',
+      'polynomial',
+      'quadratic',
+      'function',
+      'interpolation',
+    ],
+    icon: defineAsyncComponent(() => import('./ChartSplineIcon.vue')),
+    raw: () => import('./ChartSplineIcon.vue?raw'),
+  },
 ];
