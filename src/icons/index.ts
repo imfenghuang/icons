@@ -842,4 +842,10 @@ export const ICON_LIST = [
     icon: defineAsyncComponent(() => import('./ChartSplineIcon.vue')),
     raw: () => import('./ChartSplineIcon.vue?raw'),
   },
+  {
+    name: 'ChartScatterIcon',
+    keywords: ['statistics', 'analytics', 'diagram', 'graph'],
+    icon: defineAsyncComponent(() => import('./ChartScatterIcon.vue')),
+    raw: () => import('./ChartScatterIcon.vue?raw'),
+  },
 ];
