@@ -776,4 +776,22 @@ export const ICON_LIST = [
     icon: defineAsyncComponent(() => import('./SlidersVerticalIcon.vue')),
     raw: () => import('./SlidersVerticalIcon.vue?raw'),
   },
+  {
+    name: 'BoldIcon',
+    keywords: ['strong', 'text', 'format'],
+    icon: defineAsyncComponent(() => import('./BoldIcon.vue')),
+    raw: () => import('./BoldIcon.vue?raw'),
+  },
+  {
+    name: 'ItalicIcon',
+    keywords: ['oblique', 'text', 'format'],
+    icon: defineAsyncComponent(() => import('./ItalicIcon.vue')),
+    raw: () => import('./ItalicIcon.vue?raw'),
+  },
+  {
+    name: 'UnderlineIcon',
+    keywords: ['text', 'format'],
+    icon: defineAsyncComponent(() => import('./UnderlineIcon.vue')),
+    raw: () => import('./UnderlineIcon.vue?raw'),
+  },
 ];
