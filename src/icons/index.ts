@@ -848,4 +848,10 @@ export const ICON_LIST = [
     icon: defineAsyncComponent(() => import('./ChartScatterIcon.vue')),
     raw: () => import('./ChartScatterIcon.vue?raw'),
   },
+  {
+    name: 'VibrateIcon',
+    keywords: ['smartphone', 'notification', 'rumble', 'haptic feedback', 'screen'],
+    icon: defineAsyncComponent(() => import('./VibrateIcon.vue')),
+    raw: () => import('./VibrateIcon.vue?raw'),
+  },
 ];
