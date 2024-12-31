@@ -854,4 +854,16 @@ export const ICON_LIST = [
     icon: defineAsyncComponent(() => import('./VibrateIcon.vue')),
     raw: () => import('./VibrateIcon.vue?raw'),
   },
+  {
+    name: 'SmartphoneChargingIcon',
+    keywords: ['phone', 'cellphone', 'device', 'power', 'screen'],
+    icon: defineAsyncComponent(() => import('./SmartphoneChargingIcon.vue')),
+    raw: () => import('./SmartphoneChargingIcon.vue?raw'),
+  },
+  {
+    name: 'MoonIcon',
+    keywords: ['dark', 'night'],
+    icon: defineAsyncComponent(() => import('./MoonIcon.vue')),
+    raw: () => import('./MoonIcon.vue?raw'),
+  },
 ];
