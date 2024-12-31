@@ -866,4 +866,10 @@ export const ICON_LIST = [
     icon: defineAsyncComponent(() => import('./MoonIcon.vue')),
     raw: () => import('./MoonIcon.vue?raw'),
   },
+  {
+    name: 'CastIcon',
+    keywords: ['chromecast', 'airplay', 'screen'],
+    icon: defineAsyncComponent(() => import('./CastIcon.vue')),
+    raw: () => import('./CastIcon.vue?raw'),
+  },
 ];
