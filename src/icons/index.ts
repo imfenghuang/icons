@@ -872,4 +872,10 @@ export const ICON_LIST = [
     icon: defineAsyncComponent(() => import('./CastIcon.vue')),
     raw: () => import('./CastIcon.vue?raw'),
   },
+  {
+    name: 'FishSymbolIcon',
+    keywords: ['dish', 'restaurant', 'course', 'meal', 'seafood', 'pet', 'sea', 'marine'],
+    icon: defineAsyncComponent(() => import('./FishSymbolIcon.vue')),
+    raw: () => import('./FishSymbolIcon.vue?raw'),
+  },
 ];
