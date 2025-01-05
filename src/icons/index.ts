@@ -878,4 +878,10 @@ export const ICON_LIST = [
     icon: defineAsyncComponent(() => import('./FishSymbolIcon.vue')),
     raw: () => import('./FishSymbolIcon.vue?raw'),
   },
+  {
+    name: 'MapPinCheckInsideIcon',
+    keywords: [''],
+    icon: defineAsyncComponent(() => import('./MapPinCheckInsideIcon.vue')),
+    raw: () => import('./MapPinCheckInsideIcon.vue?raw'),
+  },
 ];
