@@ -880,8 +880,14 @@ export const ICON_LIST = [
   },
   {
     name: 'MapPinCheckInsideIcon',
-    keywords: [''],
+    keywords: ['location', 'waypoint', 'marker', 'drop', 'done', 'tick', 'complete', 'task', 'added'],
     icon: defineAsyncComponent(() => import('./MapPinCheckInsideIcon.vue')),
     raw: () => import('./MapPinCheckInsideIcon.vue?raw'),
+  },
+  {
+    name: 'LinkIcon',
+    keywords: ['chain', 'url'],
+    icon: defineAsyncComponent(() => import('./LinkIcon.vue')),
+    raw: () => import('./LinkIcon.vue?raw'),
   },
 ];
